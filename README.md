@@ -449,8 +449,6 @@ lib/
 | `equatable` | Value equality for models |
 | `cached_network_image` | Image caching |
 | `google_fonts` | Custom typography |
-| `shimmer` | Loading state animations |
-| `lottie` | Advanced animations |
 | `url_launcher` | Open URLs in browser |
 | `internet_connection_checker` | Network connectivity |
 | `dynamic_color` | Material You dynamic theming |
@@ -467,8 +465,20 @@ lib/
 ---
 
 ## 📱 Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e1d43306-701a-49a2-a550-0f1e47dba708" width="250" />
+  <img src="https://github.com/user-attachments/assets/4494fce1-d6d1-42c8-af69-c1e7f1ea70f1" width="250" />
+  <img src="https://github.com/user-attachments/assets/cc6e7bc9-d13f-47e0-aa74-50febffc8d06" width="250" />
+  <img src="https://github.com/user-attachments/assets/3483cefe-7261-46e4-8316-d75db94b2cc5" width="250" />
+</p>
 
-*Add screenshots of your app here*
+  🎥 App Flow Preview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8e594b71-2ef2-4cac-8745-d475beea61f5" width="300"/>
+</p>
+
+
+
 
 ---
 
