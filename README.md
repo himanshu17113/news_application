@@ -299,8 +299,7 @@ lib/
 - SliverAppBar for engaging scrolling
 
 **Trade-offs**:
-- More CSS/styling code
-- Harder to maintain consistency
+- More styling code
 - Potential performance impact (animations)
 
 **Rationale**: First impressions matter. Users expect polished apps; basic Material feels dated.
