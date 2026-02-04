@@ -87,7 +87,8 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
     emit(NewsLoading());
     page = 1;
     final result = await getTopHeadlines(TopHeadlinesParams(page: page));
-    _handleInitialResult(emit, result, (articles) => articles.isEmpty);
+    _handleInitialResult(
+        emit, result, (articles) => articles.length < _pageSize);
   }
 
   Future<void> _onGetMoreTopHeadlines(
@@ -106,7 +107,7 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
         result,
         currentState,
         () => isFetching = false,
-        (_) => false,
+        (articles) => articles.length < _pageSize,
       );
     }
   }

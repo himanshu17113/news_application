@@ -1,4 +1,3 @@
-import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -53,25 +52,27 @@ class MyApp extends StatelessWidget {
             },
           ),
         ],
-        child: DynamicColorBuilder(
-            builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) =>
-                MaterialApp(
-                  debugShowCheckedModeBanner: false,
-                  title: 'News',
-                  theme: ThemeData(
-                      colorScheme: ColorScheme.fromSeed(
-                          seedColor: lightDynamic?.primary ?? Colors.deepPurple,
-                          dynamicSchemeVariant: DynamicSchemeVariant.content,
-                          brightness: Brightness.light),
-                      useMaterial3: true),
-                  darkTheme: ThemeData(
-                      colorScheme: ColorScheme.fromSeed(
-                          seedColor: darkDynamic?.primary ?? Colors.deepPurple,
-                          dynamicSchemeVariant: DynamicSchemeVariant.content,
-                          brightness: Brightness.dark),
-                      useMaterial3: true),
-                  home: const HomePage(),
-                )),
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'News',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.deepPurple,
+              dynamicSchemeVariant: DynamicSchemeVariant.content,
+              brightness: Brightness.light,
+            ),
+            useMaterial3: true,
+          ),
+          darkTheme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.deepPurple,
+              dynamicSchemeVariant: DynamicSchemeVariant.content,
+              brightness: Brightness.dark,
+            ),
+            useMaterial3: true,
+          ),
+          home: const HomePage(),
+        ),
       ),
     );
   }

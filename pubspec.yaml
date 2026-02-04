@@ -39,7 +39,7 @@ dependencies:
   dio: ^5.4.3+1
   url_launcher: ^6.3.0
   intl: ^0.19.0
-  dynamic_color: ^1.7.0
+  # dynamic_color: ^1.8.2  # Temporarily removed due to Flutter 3.27 compatibility issues
   cached_network_image: ^3.3.1
   gap: ^3.0.1
   dartz: ^0.10.1
